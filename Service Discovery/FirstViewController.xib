@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="Service_Discovery" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Discovery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yi-jS-spe">
+                    <rect key="frame" x="51.5" y="80" width="272" height="40"/>
+                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="34"/>
+                    <color key="textColor" red="0.16022844917683102" green="0.37383695812404605" blue="0.62874762055837563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="highlightedColor" red="0.82382181700668466" green="0.7019968808580761" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to discover nearby services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-Zc-7E6">
+                    <rect key="frame" x="78" y="464" width="220" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.16022844917683102" green="0.37383695812404605" blue="0.62874762055837563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7Q-U1-Qfw">
+                    <rect key="frame" x="78" y="223.5" width="220" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="KJP-5w-utq"/>
+                        <constraint firstAttribute="height" constant="220" id="On0-hL-wiT"/>
+                    </constraints>
+                    <state key="normal" image="symbol"/>
+                    <connections>
+                        <action selector="searchButtonTaped:" destination="-1" eventType="touchUpInside" id="ILj-Um-jOV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.61039239168167114" green="0.80219268798828125" blue="0.89414703845977783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="E2d-Zc-7E6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BNd-Ty-A6A"/>
+                <constraint firstItem="D7Q-U1-Qfw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L3G-8L-MDU"/>
+                <constraint firstItem="4yi-jS-spe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="ejV-La-guh"/>
+                <constraint firstItem="E2d-Zc-7E6" firstAttribute="width" secondItem="D7Q-U1-Qfw" secondAttribute="width" id="gVQ-1P-cK2"/>
+                <constraint firstItem="4yi-jS-spe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lZe-71-sga"/>
+                <constraint firstItem="D7Q-U1-Qfw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="q3x-tQ-c0U"/>
+                <constraint firstItem="E2d-Zc-7E6" firstAttribute="top" secondItem="D7Q-U1-Qfw" secondAttribute="bottom" constant="20" id="sCB-L3-OJf"/>
+            </constraints>
+            <point key="canvasLocation" x="61.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="symbol" width="512" height="512"/>
+    </resources>
+</document>
